@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func factorial(x int) int {
+func factorial(x uint64) uint64 {
 	if x == 0 {
 		return 1
 	}
@@ -10,5 +10,5 @@ func factorial(x int) int {
 }
 
 func main() {
-	fmt.Println(factorial(4))
+	fmt.Println(factorial(50))
 }

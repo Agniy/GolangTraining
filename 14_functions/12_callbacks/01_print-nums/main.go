@@ -10,7 +10,7 @@ func visit(numbers []int, callback func(int)) {
 
 func main() {
 	visit([]int{1, 2, 3, 4}, func(n int) {
-		fmt.Println(n)
+		fmt.Println("callback:", n)
 	})
 }
 
