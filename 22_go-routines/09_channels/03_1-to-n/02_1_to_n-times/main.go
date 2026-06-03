@@ -6,7 +6,7 @@ import (
 
 func main() {
 
-	n := 10
+	n := 100
 	c := make(chan int)
 	done := make(chan bool)
 
