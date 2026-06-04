@@ -5,18 +5,18 @@ import "fmt"
 func main() {
 
 	name := "Todd"
-	fmt.Println(&name) // 0x82023c080
+	fmt.Println("main:", &name) // 0x82023c080
 
 	changeMe(&name)
 
-	fmt.Println(&name) //0x82023c080
-	fmt.Println(name)  //Rocky
+	fmt.Println("main:", &name) //0x82023c080
+	fmt.Println("main:", name)  //Rocky
 }
 
 func changeMe(z *string) {
-	fmt.Println(z)  // 0x82023c080
-	fmt.Println(*z) // Todd
+	fmt.Println("changeMe:", z)  // 0x82023c080
+	fmt.Println("changeMe:", *z) // Todd
 	*z = "Rocky"
-	fmt.Println(z)  // 0x82023c080
-	fmt.Println(*z) // Rocky
+	fmt.Println("changeMe:", z)  // 0x82023c080
+	fmt.Println("changeMe:", *z) // Rocky
 }
