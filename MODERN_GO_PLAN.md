@@ -26,21 +26,24 @@
   своим `go.mod`, старая структура 01–27 не затронута. Все примеры проходят
   `go vet` и собираются.
 
-### `29_context/` — пакет `context` (Go 1.7, 2016)
-- `01_background-todo`
-- `02_with-cancel`
-- `03_with-timeout`
-- `04_with-deadline`
-- `05_with-value`
-- `06_http-context` — отмена запросов
+### `29_context/` — пакет `context` (Go 1.7, 2016) ✅ ГОТОВО
+- `01_background-todo` ✅
+- `02_with-cancel` ✅
+- `03_with-timeout` ✅
+- `04_with-deadline` ✅
+- `05_with-value` ✅
+- `06_http-context` — отмена запросов с обеих сторон ✅
+- Один модуль на раздел (`example.com/context-examples`); каждый пример — пакет
+  main, запуск `go run ./0X_...`. Все проходят `go vet` и работают.
 
-### `30_error-wrapping/` — обёртка ошибок (Go 1.13, 2019)
-- `01_fmt-errorf-w` — глагол `%w`
-- `02_errors-is`
-- `03_errors-as`
-- `04_errors-unwrap`
-- `05_errors-join` (Go 1.20)
-- Расширяет существующий `23_error-handling`.
+### `30_error-wrapping/` — обёртка ошибок (Go 1.13, 2019) ✅ ГОТОВО
+- `01_fmt-errorf-w` — глагол `%w` ✅
+- `02_errors-is` ✅
+- `03_errors-as` ✅
+- `04_errors-unwrap` (+ кастомный метод Unwrap) ✅
+- `05_errors-join` (Go 1.20) ✅
+- Один модуль (`example.com/error-wrapping`). Расширяет `23_error-handling`.
+  Все проходят `go vet` и работают.
 
 ### `31_generics/` — дженерики (Go 1.18, 2022) ⭐ самое важное
 - `01_type-parameters` — синтаксис `[T any]`
