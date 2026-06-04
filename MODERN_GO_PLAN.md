@@ -45,14 +45,16 @@
 - Один модуль (`example.com/error-wrapping`). Расширяет `23_error-handling`.
   Все проходят `go vet` и работают.
 
-### `31_generics/` — дженерики (Go 1.18, 2022) ⭐ самое важное
-- `01_type-parameters` — синтаксис `[T any]`
-- `02_constraints` — `comparable`, `constraints.Ordered`
-- `03_generic-functions` — Map/Filter/Reduce
-- `04_generic-types` — generic-стек/очередь
-- `05_type-inference`
-- `06_any-vs-interface`
-- `07_generic-aliases` (Go 1.24)
+### `31_generics/` — дженерики (Go 1.18, 2022) ⭐ ✅ ГОТОВО
+- `01_type-parameters` — синтаксис `[T any]` ✅
+- `02_constraints` — `comparable`, `cmp.Ordered` (stdlib, не x/exp), свой `~`-constraint ✅
+- `03_generic-functions` — Map/Filter/Reduce ✅
+- `04_generic-types` — generic `Stack[T]` ✅
+- `05_type-inference` ✅
+- `06_any-vs-interface` ✅
+- `07_generic-aliases` (Go 1.24) ✅
+- Один модуль (`example.com/generics`, `go 1.24` ради примера 07). gofmt+vet
+  чисто, все 7 запускаются.
 
 ---
 
