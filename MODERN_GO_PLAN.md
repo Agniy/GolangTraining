@@ -60,10 +60,12 @@
 
 ## Приоритет 2 — стандартная библиотека
 
-### `32_slices-maps-cmp/` — новые пакеты (Go 1.21, 2023)
-- `01_slices-package` — `slices.Sort/Contains/Index`
-- `02_maps-package` — `maps.Keys/Values/Clone`
-- `03_cmp-package`
+### `32_slices-maps-cmp/` — новые пакеты (Go 1.21, 2023) ✅ ГОТОВО
+- `01_slices-package` — `Sort/Contains/Index/BinarySearch/Min/Max/Reverse/Equal/SortFunc` ✅
+- `02_maps-package` — `Clone/Equal/Copy/DeleteFunc`; про переход Keys/Values на итераторы (1.23) ✅
+- `03_cmp-package` — `Compare/Less/Or/Ordered` ✅
+- Один модуль (`example.com/slices-maps-cmp`, `go 1.22` ради `cmp.Or`).
+  gofmt+vet чисто, все 3 запускаются.
 
 ### `33_builtins/` — новые встроенные функции
 - `01_min-max` (Go 1.21)
